@@ -1,0 +1,39 @@
+.section-settings
+  margin: 40px 16px 16px 16px
+  display: grid
+  grid-template-columns: auto auto
+  grid-column-gap: 16px
+  grid-row-gap: 16px
+
+.card
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  min-width: 164px
+  height: 140px
+  background-color: #fff
+  border-radius: 6px
+  box-shadow: 0 4px 26px rgba(0, 0, 0, 0.06)
+  padding: 16px
+  text-align: center
+  text-decoration: none
+  outline-width: 2px
+  outline-style: solid
+  outline-color: transparent
+  outline-offset: -20px
+
+  &:hover
+    box-shadow: 0 4px 26px rgba(97, 62, 234, 0.4)
+    transition-duration: 0.2s
+    transition-property: box-shadow, outline-color
+    transition-timing-function: ease-out
+
+  &:focus-visible
+    outline-color: #613EEA
+
+  &:active
+    box-shadow: 0 0 0 transparent
+  
+  .card-image
+    margin-bottom: 22px
