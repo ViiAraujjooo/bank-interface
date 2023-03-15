@@ -17,55 +17,123 @@
 <body>
   <header class="header">
     <div class="container">
-      <h1 class="title-1">Settings</h1>
+      <h1 class="title-1">$ 926.21</h1>
 
-      <a href="#" class="avatar">
+      <a href="#" class="avatar avatar-status-online">
         <img src="assets/images/avatar.png" alt="avatar image" class="avatar-image" />
-        <span class="avatar-status avatar-status-online">online</span>
       </a>
     </div>
+
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-list-item">
+          <a href="#" class="menu-item-link bank-icon-send-money">
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="menu-list-item">
+          <a href="#" class="menu-item-link bank-icon-send-money">
+            <span>Wallet</span>
+          </a>
+        </li>
+        <li class="menu-list-item">
+          <a href="#" class="menu-item-link bank-icon-send-money">
+            <span>Transfer</span>
+          </a>
+        </li>
+        <li class="menu-list-item">
+          <a href="#" class="menu-item-link bank-icon-send-money">
+            <span>Investments</span>
+          </a>
+        </li>
+        <li class="menu-list-item">
+          <a href="#" class="menu-item-link bank-icon-send-money active">
+            <span>Settings</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="section-settings">
-    <a href="#" class="card title-3 bank-icon-information" aria-label="Profile information link">
-      Profile information
-    </a>
+  <section class="user-cards">
+    <h2 class="title-user-cards">Card List</h2>
+    <div class="user-card">
+      <header class="user-card-header">
+        <img src="assets/images/visa.svg" alt="Card fleag Visa">
+        <button class="button-card-options" aria-label="Button card options">
+          <img src="assets/images/button-card.png" alt="Button card options">
+        </button>
+      </header>
 
-    <a href="#" class="card title-3 bank-icon-password" aria-label="Password link">
-      Password
-    </a>
+      <h3 class="title-card-number">Card Number</h3>
+      <p class="text-card-number">
+        <span>
+          ****
+        </span>
+        <span>
+          ****
+        </span>
+        <span>
+          ****
+        </span>
+        <span>
+          8014
+        </span>
+      </p>
 
-    <a href="#" class="card title-3 bank-icon-email" aria-label="Email link">
-      Email
-    </a>
+      <footer class="user-card-footer">
+        <h3 class="title-card-footer">
+          <small class="small-card-footer">
+            CARD HOLDER
+          </small>
+          Vitória Araujo
+        </h3>
+        <h3 class="title-card-footer">
+          <small class="small-card-footer">
+            EXPIRES
+          </small>
+          10/28
+        </h3>
+      </footer>
+    </div>
+  </section>
 
-    <a href="#" class="card title-3 bank-icon-phone-number" aria-label="Phone number link">
-      Phone Number
-    </a>
+  <section class="transaction-history">
+    <h2 class="title-transaction-history">Transaction History</h2>
+    <nav class="nav-hist">
+      <ul class="nav-hist-list">
+        <li class="nav-hist-item">
+          <a class="nav-hist-item-link active" href="#">Sent</a>
+        </li>
 
-    <a href="#" class="card title-3 bank-icon-notifications" aria-label="Notifications link">
-      Notifications
-    </a>
+        <li class="nav-hist-item">
+          <a class="nav-hist-item-link" href="#">Received</a>
+        </li>
+      </ul>
+    </nav>
 
-    <a href="#" class="card title-3 bank-icon-currency" aria-label="Currency link">
-      Currency
-    </a>
+    <form>
+      <fieldset>
+        <div class="form-group">
+          <label class="search-label" for="search">Search</label>
+          <input type="text" class="form-control" id="search" placeholder="Search transaction">
+          <button type="submit" class="form-button">Search</button>
+        </div>
+      </fieldset>
+    </form>
 
-    <a href="#" class="card title-3 bank-icon-language" aria-label="language link">
-      Language
-    </a>
+    <h3 class="date-history">Today</h3>
 
-    <a href="#" class="card title-3 bank-icon-account" aria-label="Account link">
-      Account
-    </a>
-
-    <a href="#" class="card title-3 bank-icon-privacy-police" aria-label="Privacy Policy link">
-      Privacy Policy
-    </a>
-
-    <a href="#" class="card title-3 bank-icon-terms-of-use" aria-label="Terms of Use link">
-      Terms of Use
-    </a>
+    <div class="history-content">
+      <a href="#" class="history-item">
+        <img src="assets/images/history-icon.svg" alt="Photo of the person who carried out the transfer"
+          class="history-item-icon">
+        <p class="history-receiver-name">to: Rebecca Moore</p>
+        <p class="history-send-date">20 January, 2019</p>
+        <p class="history-value">$ 972.00</p>
+      </a>
+    </div>
+    <h3 class="date-history">Yesterday</h3>
   </section>
 </body>
 

@@ -1,0 +1,76 @@
+.user-card
+  background: linear-gradient(109.55deg, #8676FB 0%, #AB7BFF 100%)
+  border-radius: 6px
+  width: 295px
+  height: 174px
+  margin-left: 40px
+  margin-right: 40px
+  margin-top: 14px
+  padding: 20px
+  position: relative
+  overflow: hidden
+
+  &::before
+    content: ''
+    position: absolute
+    background-image: url("../images/card-wave.svg")
+    background-repeat: no-repeat
+    background-size: 110%
+    height: 85px
+    width: 100%
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 1
+
+  .user-card-header
+    display: flex
+    justify-content: space-between
+    padding-bottom: 20px
+
+    .button-card-options
+      background-color: transparent
+      border: none
+      width: 24px
+      height: 24px
+
+
+.title-card-number
+  display: none
+
+.text-card-number
+  color: #fff
+  font-weight: 400
+  font-size: 20px
+  letter-spacing: 5px
+  line-height: 26px
+  display: flex
+  justify-content: space-between
+  padding-bottom: 24px
+
+
+.user-card-footer
+  display: flex
+  justify-content: space-between
+  z-index: 2
+  position: relative
+
+  .title-card-footer
+  color: #ffffff
+  font-weight: 500
+  font-size: 12px
+  line-height: 20px
+
+  small
+    display: flex
+    flex-flow: column wrap
+    color: #ffffff
+    font-weight: 300
+    font-size: 12px
+    line-height: 20px
+    opacity: 0.8
+
+
+
+
+

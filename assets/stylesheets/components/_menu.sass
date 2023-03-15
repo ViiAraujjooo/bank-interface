@@ -1,0 +1,64 @@
+.menu
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+  height: 49px
+  z-index: 3
+
+  .menu-list
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: nowrap
+    height: inherit
+    list-style: none
+
+    .menu-list-item
+      width: 20vw
+      height: inherit
+      background-color: #fff
+
+      &:not(:nth-child(3))
+
+
+        .menu-item-link
+          width: inherit
+          height: inherit
+
+      &:nth-child(3)
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+
+        .menu-item-link
+          position: absolute
+          bottom: 22px
+          width: 56px
+          height: 56px
+          border-radius: 50px
+          background-color: #613EEA
+          z-index: 2
+
+          &::before
+            content: ''
+            position: absolute
+            left: calc(50% - 64px / 2)
+            bottom: 0
+            width: 64px
+            height: 32px
+            z-index: -1
+            border-radius: 0 0 150px 150px
+            background-color: #E5E5E5
+
+      .menu-item-link
+        display: inline-flex
+
+        span
+          position: absolute
+          top: 0
+          left: 0
+          width: 0
+          height: 0
+          overflow: hidden

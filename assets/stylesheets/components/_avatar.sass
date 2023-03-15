@@ -1,8 +1,26 @@
 .avatar
   position: relative
+  display: inline-block
   width: 35px
   height: 35px
-  
+
+  &[class*="avatar-status"]
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 3px
+      width: 10px
+      height: 10px
+      border-width: 2px
+      border-style: solid
+      border-color: #fff
+      border-radius: 50px
+      font-size: 0
+
+  &.avatar-status-online::before
+    background-color: #54D3AD
+
   .avatar-image
     width: 32px
     height: 32px
@@ -10,18 +28,3 @@
     border-style: solid
     border-color: #ECECFB
     border-radius: 50px
-
-  .avatar-status
-    position: absolute
-    top: 0
-    right: 3px
-    width: 10px
-    height: 10px
-    border-width: 2px
-    border-style: solid
-    border-color: #fff
-    border-radius: 50px
-    font-size: 0
-
-    &.avatar-status-online
-      background-color: #54D3AD 
