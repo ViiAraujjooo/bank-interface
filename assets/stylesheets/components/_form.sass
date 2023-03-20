@@ -1,15 +1,15 @@
-fieldset
+.history-fieldset
   border: none
   margin-top: 16px
   margin-bottom: 24px
 
-  .form-group
+  .history-form-group
     position: relative
 
     label
       display: none
 
-    .form-control
+    .history-form-control
       width: 100%
       height: 32px
       background-color: #F0F1F4
@@ -23,7 +23,7 @@ fieldset
         color: #A6AAB4
         padding-left: 16px
 
-    .form-button
+    .history-form-button
       position: absolute
       background-image: url("../images/form-button.svg")
       background-repeat: no-repeat
@@ -35,6 +35,110 @@ fieldset
       width: 32px
       height: 32px
       right: 0
+
+
+.value-fieldset
+  margin-top: 20px
+  width: 100%
+  height: 56px
+  background-color: #ffffff
+  border: 1px solid #A6AAB4
+  border-radius: 6px
+  padding-left: 22px
+
+  &.active
+    border: 1px solid #613EEA
+
+  .value-form-title
+    color: #A6AAB4
+    font-size: 0.75rem
+    font-weight: 500
+    line-height: 1.125rem
+    letter-spacing: 0.2px
+
+    &.active
+      color: #613EEA
+
+  .value-form-group
+    position: relative
+
+    label
+      display: none
+
+    .value-form-control
+      border: none
+      width: 181px
+      height: 24px
+      padding-top: 18px
+      padding-bottom: 14px
+
+
+      &::placeholder
+        font-weight: 500
+        font-size: 1.125rem
+        line-height: 1.375rem
+        color: #D6D9E4
+
+    .currency
+      position: absolute
+      color: #A6AAB4
+      font-size: 0.75rem
+      font-weight: 600
+      line-height: 1.125rem
+      letter-spacing: 0.2px
+      right: 0
+      padding-right: 16px
+
+      &.active
+        color: #613EEA
+
+      ::visited
+        color: #613EEA
+
+
+.description-fieldset
+  border: none
+  margin-top: 24px
+
+  .description-form-group
+
+
+    label
+      display: none
+
+    .description-form-control
+      width: 100%
+      height: 56px
+      background-color: #ffffff
+      border: 0.5px solid #A6AAB4
+      border-radius: 6px
+
+      &::placeholder
+          font-weight: 500
+          font-size: 1rem
+          line-height: 1.375rem
+          color: #A6AAB4
+          padding-left: 20px
+
+
+.send-money-button
+  width: 100%
+  height: 56px
+  color: #ffffff
+  font-size: 1rem
+  font-weight: 600
+  line-height: 1.5rem
+  letter-spacing: 0.1px
+  text-align: center
+  background-color: #613EEA
+  border: none
+  border-radius: 6px
+  margin-top: 40px
+
+
+
+
+
 
 
 

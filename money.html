@@ -72,18 +72,85 @@
     <div class="credit-card">
       <h2 class="title-4">Select credit card</h2>
 
+      <ul class="credit-card-list">
+        <li class="credit-card-item">
+          <a href="#" class="credit-card-link active">
+            <img src="assets/images/visa.svg" alt="Card fleag Visa">
+            <p class="text-card-number active">
+              ****
+              <span class="text-card-span active">
+                8014
+              </span>
+            </p>
+            <p class="card-available-limit active">$ 1,345.56</p>
+          </a>
+        </li>
 
+        <li class="new-credit-card">
+          <a href="#" class="new-credit-card-link">
+            <img src="assets/images/new-credit-card.svg" alt="New credit card icon">
+            <p class="new-credit-card-text">
+              New <br>
+              credit card
+            </p>
+          </a>
+        </li>
+
+      </ul>
     </div>
 
     <div class="recipient">
-      <h2 class="title-4">Recipient</h2>
+      <div class="recipient-top">
+        <h2 class="title-4">Recipient</h2>
+        <a href="#" class="contact-list">Show all</a>
+      </div>
+
+      <ul class="money-receiver-list">
+        <li class="money-receiver-item">
+          <a href="#" class="money-receiver-link active">
+            <img src="assets/images/history-icon-2.svg" alt="Person who will receive the transfer" class="active">
+            <p class="money-receiver-name active">
+              Franz <br> Ferdinand
+            </p>
+          </a>
+        </li>
+
+        <li class="money-receiver-item">
+          <a href="#" class="money-receiver-link">
+            <img src="assets/images/history-icon-3.svg" alt="Person who will receive the transfer">
+            <p class="money-receiver-name">
+              Franz <br> Ferdinand
+            </p>
+          </a>
+        </li>
+
+      </ul>
 
     </div>
 
     <div class="transaction-details">
       <h2 class="title-4">Transaction details</h2>
 
+      <form>
+        <fieldset class="value-fieldset active">
+          <legend class="value-form-title active">Amount</legend>
+          <div class="value-form-group">
+            <label class="value-label" for="value">Value</label>
+            <input type="number" class="value-form-control" id="value" placeholder="$">
+            <a href="#" class="currency active">change currency</a>
+          </div>
+        </fieldset>
+
+        <fieldset class="description-fieldset">
+          <div class="description-form-group">
+            <label class="description-label" for="description">Description</label>
+            <input type="text" class="description-form-control" id="description" placeholder="Description (optional)">
+          </div>
+        </fieldset>
+      </form>
     </div>
+
+    <button type="submit" class="send-money-button">Confirm</button>
 
   </section>
 </body>

@@ -1,0 +1,55 @@
+.recipient-top
+  display: flex
+  justify-content: space-between
+
+  .contact-list
+    color: #613EEA
+    font-size: 0.75rem
+    font-weight: 600
+    line-height: 1.125rem
+    letter-spacing: 0.2px
+
+    ::visited
+      color: #613EEA
+
+.money-receiver-list
+  display: inline-flex
+  list-style: none
+
+  .money-receiver-link
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: #F0F1F4
+    border-radius: 6px
+    width: 144px
+    height: 120px
+    margin: 12px 0px 32px 16px
+    padding: 18px 12px 10px 12px
+    text-decoration: none
+
+    &.active
+      background-color: #613EEA
+
+    img
+      width: 40px
+      height: 40px
+      border-radius: 50%
+
+      &.active
+        border: 1px solid #ffffff
+
+    .money-receiver-name
+      color: #A6AAB4
+      font-size: 0.875rem
+      font-weight: 500
+      line-height: 1.25rem
+      letter-spacing: 0.2px
+      text-align: center
+      padding-top: 10px
+
+      &.active
+        color: #FFFFFF
+
+
