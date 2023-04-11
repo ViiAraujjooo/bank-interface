@@ -1,4 +1,10 @@
 .user-cards
+  display: flex
+  flex-flow: row nowrap
+  scroll-snap-type: x mandatory
+  max-width: 1440px
+  width: 100%
+  overflow: auto
 
   .user-card
     background: linear-gradient(109.55deg, #8676FB 0%, #AB7BFF 100%)
@@ -6,10 +12,16 @@
     width: 295px
     height: 174px
     left: calc(25% - 100px / 2)
-    margin-top: 14px
+    margin: 14px 16px 0px 0px
     padding: 20px
     position: relative
-    overflow: hidden
+
+    &.card-2
+      background: linear-gradient(109.55deg, #F09D5A 0%, #FFAD6A 100%)
+
+      &::before
+        background-image: url("../images/card-wave-2.svg")
+
 
     &::before
       content: ''

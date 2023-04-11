@@ -12,6 +12,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/stylesheets/app.css" />
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const inputs = document.querySelectorAll('.form-control');
+
+      Array.prototype.forEach.call(inputs, (element) => {
+        element.addEventListener('focusin', (event) => {
+          event.target.parentElement.classList.add('active')
+        })
+
+        element.addEventListener('focusout', (event) => {
+          if (event.target.value.length === 0) {
+            event.target.parentElement.classList.remove('active')
+          }
+        })
+      })
+    })
+  </script>
 </head>
 
 <body>
@@ -129,28 +146,29 @@
     </div>
 
     <div class="transaction-details">
-      <h2 class="title-4">Transaction details</h2>
-
-      <form>
-        <fieldset class="value-fieldset active">
-          <legend class="value-form-title active">Amount</legend>
-          <div class="value-form-group">
-            <label class="value-label" for="value">Value</label>
-            <input type="number" class="value-form-control" id="value" placeholder="$">
-            <a href="#" class="currency active">change currency</a>
+      <form class="form">
+        <fieldset>
+          <legend class="title-4">Transaction details</legend>
+          <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="number" class="form-control" id="amount">
+            <a href="#" class="form-link">change currency</a>
           </div>
-        </fieldset>
 
-        <fieldset class="description-fieldset">
-          <div class="description-form-group">
-            <label class="description-label" for="description">Description</label>
-            <input type="text" class="description-form-control" id="description" placeholder="Description (optional)">
+          <div class="form-group">
+            <label for="description">Description (optional)</label>
+            <input type="text" class="form-control" id="description">
           </div>
+
+          <div class="form-group">
+            <button type="submit" class="send-money-button">Confirm</button>
+          </div>
+
         </fieldset>
       </form>
     </div>
 
-    <button type="submit" class="send-money-button">Confirm</button>
+
 
   </section>
 </body>

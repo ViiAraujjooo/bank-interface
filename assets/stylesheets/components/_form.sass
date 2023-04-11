@@ -36,89 +36,71 @@
       height: 32px
       right: 0
 
+.form
 
-.value-fieldset
-  margin-top: 20px
-  width: 100%
-  height: 56px
-  background-color: #ffffff
-  border: 1px solid #A6AAB4
-  border-radius: 6px
-  padding-left: 22px
+  fieldset
+    border: none
 
-  &.active
-    border: 1px solid #613EEA
+    legend
+      margin-bottom: 20px
 
-  .value-form-title
-    color: #A6AAB4
-    font-size: 0.75rem
-    font-weight: 500
-    line-height: 1.125rem
-    letter-spacing: 0.2px
+  .form-group
+    position: relative
+    margin-bottom: 24px
 
     &.active
-      color: #613EEA
+      label
+        transform: translateY(-30px) scale(0.8)
+        color: #613EEA
 
-  .value-form-group
-    position: relative
+    &:first-of-type
+      .form-control
+        padding-right: 115px
 
+    &:nth-child(3)
+      margin-bottom: 40px
+
+
+    .form-link,
     label
-      display: none
-
-    .value-form-control
-      border: none
-      width: 181px
-      height: 24px
-      padding-top: 18px
-      padding-bottom: 14px
-
-
-      &::placeholder
-        font-weight: 500
-        font-size: 1.125rem
-        line-height: 1.375rem
-        color: #D6D9E4
-
-    .currency
       position: absolute
-      color: #A6AAB4
-      font-size: 0.75rem
-      font-weight: 600
-      line-height: 1.125rem
-      letter-spacing: 0.2px
-      right: 0
-      padding-right: 16px
-
-      &.active
-        color: #613EEA
-
-      ::visited
-        color: #613EEA
-
-
-.description-fieldset
-  border: none
-  margin-top: 24px
-
-  .description-form-group
-
 
     label
-      display: none
+      font-weight: 500
+      color: #A6AAB4
+      font-size: 1rem
+      line-height: 1.375rem
+      letter-spacing: 0.2px
+      left: 10px
+      top: calc(50% - 22px / 2)
+      padding: 0 10px
+      background-color: #F9FAFB
+      transition-property: color, transform
+      transition-duration: 0.2s
+      transition-timing-function: ease-out
+      pointer-events: none
+      transform-origin: left
 
-    .description-form-control
+    .form-link
+      right: 20px
+      top: calc(50% - 18px / 2)
+      color: #613EEA
+      font-size: 0.75rem
+      line-height: 1.125rem
+      font-weight: 600
+      text-decoration: none
+
+    .form-control
       width: 100%
       height: 56px
-      background-color: #ffffff
-      border: 0.5px solid #A6AAB4
+      border: 1px #A6AAB4 solid
       border-radius: 6px
+      padding: 16px 20px
+      background-color: transparent
 
-      &::placeholder
-          font-weight: 500
-          font-size: 1rem
-          line-height: 1.375rem
-          color: #A6AAB4
-          padding-left: 20px
+      &:focus
+        border-color: #613EEA
+        outline: 0
 
 
 .send-money-button
@@ -133,7 +115,6 @@
   background-color: #613EEA
   border: none
   border-radius: 6px
-  margin-top: 40px
 
 
 

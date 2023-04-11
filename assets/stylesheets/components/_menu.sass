@@ -18,35 +18,18 @@
       width: 20vw
       height: inherit
       background-color: #fff
-
-      &:not(:nth-child(3))
-
-
-        .menu-item-link
-          width: inherit
-          height: inherit
-
-      &:nth-child(3)
-        position: relative
-        display: flex
-        align-items: center
-        justify-content: center
-
-        .menu-item-link
-          position: absolute
-          width: 56px
-          height: 56px
-          background-color: #613EEA
-          z-index: 2
-          color: #FFFFFF
+      display: flex
+      align-items: center
+      justify-content: center
 
       .menu-item-link
-        display: inline-flex
+        width: 22px
+        height: 22px
+        text-decoration: none
+        color: #A6AAB4
+
+        &:nth-child(3)
+          background-color: #613EEA
 
         span
-          position: absolute
-          top: 0
-          left: 0
-          width: 0
-          height: 0
-          overflow: hidden
+          display: none
